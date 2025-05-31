@@ -110,22 +110,25 @@ Write a C program to perform addition and subtraction of two numbers using funct
 ## PROGRAM:
 ```
 #include<stdio.h>
-int addition(int a,int b)
+void addition(int a,int b)
 {
-return a+b;
+int sum;
+sum=a+b;
+printf("ADDITION: %d\n",sum);	
 }
-int substraction(int a,int b)
+void sub(int a,int b)
 {
-return a-b;
+int diff;
+diff=a-b;
+printf("SUBTRACTION: %d\n",diff);
 }
 int main()
 {
-int a,b;
-scanf("%d%d",&a,&b);
-int result_addition=addition(a,b);
-int result_substraction=substraction(a,b);
-printf("Addition: %d\n",result_addition);
-printf("Subtraction: %d",result_substraction);
+int num1,num2;
+printf("ENTER TWO NUMBERS:\n");
+scanf("%d%d",&num1,&num2);
+addition(num1,num2);
+sub(num1,num2);
 }
 ```
 
